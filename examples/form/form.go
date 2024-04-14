@@ -6,7 +6,7 @@
 /* This simple example demonstrates how to implement a form */
 package main
 
-import gc "github.com/rthornton128/goncurses"
+import gc "github.com/mintalk/goncurses"
 
 func main() {
 	stdscr, _ := gc.Init()

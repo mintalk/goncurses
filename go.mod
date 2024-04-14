@@ -1,3 +1,3 @@
-module github.com/rthornton128/goncurses
+module github.com/mintalk/goncurses
 
 go 1.15

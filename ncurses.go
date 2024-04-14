@@ -5,11 +5,12 @@
 
 package goncurses
 
-// #cgo !darwin,!openbsd,!windows pkg-config: ncurses
+// #cgo !darwin,!openbsd,!windows pkg-config: ncursesw
 // #cgo windows CFLAGS: -DNCURSES_MOUSE_VERSION
 // #cgo windows LDFLAGS: -lpdcurses
 // #cgo darwin openbsd LDFLAGS: -lncurses
 // #include <curses.h>
+// #include <locale.h>
 // #include "goncurses.h"
 import "C"
 
@@ -18,6 +19,14 @@ import (
 	"fmt"
 	"unsafe"
 )
+
+func init() {
+
+}
+
+func SetLocale(category C.int, locale string) string {
+	return C.GoString(C.setlocale(category, C.CString(locale)))
+}
 
 // BaudRate returns the speed of the terminal in bits per second
 func BaudRate() int {

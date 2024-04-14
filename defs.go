@@ -6,7 +6,18 @@ package goncurses
 
 // #cgo !darwin,!openbsd,!windows pkg-config: ncurses
 // #include <curses.h>
+// #include <locale.h>
 import "C"
+
+// Locales
+const (
+	LC_ALL      = C.LC_ALL
+	LC_COLLATE  = C.LC_COLLATE
+	LC_CTYPE    = C.LC_CTYPE
+	LC_MONETARY = C.LC_MONETARY
+	LC_NUMERIC  = C.LC_NUMERIC
+	LC_TIME     = C.LC_TIME
+)
 
 // Synconize options for Sync() function
 const (
