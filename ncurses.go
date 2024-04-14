@@ -21,7 +21,7 @@ import (
 )
 
 func init() {
-
+	SetLocale(LC_ALL, "")
 }
 
 func SetLocale(category C.int, locale string) string {

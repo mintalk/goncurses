@@ -4,12 +4,12 @@
 
 package goncurses
 
-// #cgo !darwin,!openbsd,!windows pkg-config: ncurses
+// #cgo !darwin,!openbsd,!windows pkg-config: ncursesw
 // #include <curses.h>
 // #include <locale.h>
 import "C"
 
-// Locales
+// Locales for SetLocale() function
 const (
 	LC_ALL      = C.LC_ALL
 	LC_COLLATE  = C.LC_COLLATE
