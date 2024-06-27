@@ -8,7 +8,7 @@ package goncurses
 // #cgo !darwin,!openbsd,!windows pkg-config: ncursesw
 // #cgo windows CFLAGS: -DNCURSES_MOUSE_VERSION
 // #cgo windows LDFLAGS: -lpdcurses
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 // #include "goncurses.h"
 import "C"
 

@@ -9,7 +9,7 @@ package goncurses
 // FILE *fdopen(int fildes, const char *mode) { return _fdopen(fildes, mode); }
 // #endif
 // #include <stdlib.h>
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 import "C"
 
 import (

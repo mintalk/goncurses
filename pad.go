@@ -5,7 +5,7 @@
 
 package goncurses
 
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 // #include "goncurses.h"
 import "C"
 

@@ -7,7 +7,7 @@
 
 package goncurses
 
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 import "C"
 
 // Echo prints a single character to the pad immediately. This has the

@@ -7,7 +7,7 @@ package goncurses
 // #cgo !darwin,!openbsd,!windows pkg-config: panel
 // #cgo darwin openbsd LDFLAGS: -lpanel
 // #include <panel.h>
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 import "C"
 
 import "errors"

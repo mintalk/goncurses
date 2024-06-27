@@ -9,7 +9,7 @@ package goncurses
 // #cgo windows CFLAGS: -DNCURSES_MOUSE_VERSION
 // #cgo windows LDFLAGS: -lpdcurses
 // #cgo darwin openbsd LDFLAGS: -lncurses
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 // #include <locale.h>
 // #include "goncurses.h"
 import "C"

@@ -6,7 +6,7 @@
 
 package goncurses
 
-// #include <curses.h>
+// #include <ncursesw/curses.h>
 // #include <form.h>
 // #include <menu.h>
 import "C"
